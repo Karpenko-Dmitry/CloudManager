@@ -2,17 +2,18 @@
 buildscript {
     ext {
         versions = [
-                'kotlin'           : "1.5.21",
-                'rxJava'           : '2.2.21',
-                'rxKotlin'         : '2.4.0',
-                'rxAndroid'        : '2.1.1',
-                'room'             : '2.3.0',
-                'gradle'           : '7.0.2',
-                'exoPlayer'        : "2.15.1",
-                'retrofit'         : "2.9.0",
+                'kotlin': "1.5.21",
+                'rxJava': '2.2.21',
+                'rxKotlin': '2.4.0',
+                'rxAndroid': '2.1.1',
+                'room': '2.3.0',
+                'gradle': '7.0.2',
+                'exoPlayer': "2.15.1",
+                'retrofit': "2.9.0",
                 'retrofitRxAdapter': '2.7.1',
-                'moshi'            : "1.8.0",
-                'logging'          : '4.8.1',
+                'moshi': "1.8.0",
+                'logging': '4.8.1',
+                'dagger': '2.36'
         ]
 
         Libs = [
@@ -23,6 +24,10 @@ buildscript {
                         'recyclerView'    : 'androidx.recyclerview:recyclerview:1.2.1'
                 ],
                 'material' : 'com.google.android.material:material:1.5.0',
+                'dagger': [
+                        'dagger': "com.google.dagger:dagger:${versions.dagger}",
+                        'compiler': "com.google.dagger:dagger-compiler:${versions.dagger}" //kapt
+                ],
                 'rx'       : [
                         'rxjava'   : "io.reactivex.rxjava2:rxjava:${versions.rxJava}",
                         'rxandroid': "io.reactivex.rxjava2:rxandroid:${versions.rxAndroid}",
